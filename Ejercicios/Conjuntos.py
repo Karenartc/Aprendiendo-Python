@@ -1,24 +1,12 @@
-#  Conjuntos
+#  CONJUNTOS
 
-def menu(): #procedimiento, ya que no retorna nada
+def menu(): 
     print("\nEscoje una opción")
     print("1. Ejercicio 1")
     print("2. Ejercicio 2")
     print("3. Ejercicio 3")
     print("4. Ejercicio 4")
     print("5. Salir de aplicativo")
-    
-def validaOpcion(): #funcion, ya que retorna un valor
-    try:
-        opcion = int(input("Ingrese opción a ejecutar: "))
-        if opcion >= 1 and opcion <= 5:
-            return opcion
-        else:
-            print("La opción ingresada es incorrecta. Vuelva a intentarlo")
-            return validaOpcion()
-    except:
-        print("Debe ingresar sólo números")
-        return validaOpcion()
 
 #1. Crear vonjunto con elementos enteros ingresados por teclado y mostrarlo
 def ejercicio1():
@@ -82,6 +70,19 @@ def ejercicio3():
 #4.    
 def ejercicio4():
     pass
+
+#validador del ingreso en el controlador de ejercicios
+def validaOpcion(): 
+    try:
+        opcion = int(input("Ingrese opción a ejecutar: "))
+        if opcion >= 1 and opcion <= 5:
+            return opcion
+        else:
+            print("La opción ingresada es incorrecta. Vuelva a intentarlo")
+            return validaOpcion()
+    except:
+        print("Debe ingresar sólo números")
+        return validaOpcion()
 
 #Controlador de ejercicios
 while True:
