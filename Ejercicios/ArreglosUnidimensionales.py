@@ -1,4 +1,4 @@
-#  DICCIONARIOS
+#  ARREGLOS UNIDIMENSIONALES
 
 #importanción de libreria para utilizar los arreglos unidimensionales
 import numpy as np
